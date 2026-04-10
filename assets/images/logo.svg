@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 380" role="img" aria-label="FieldsMotors Agricole">
+  <defs>
+    <!-- Orange gradient for flames and text -->
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5A623;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E8720C;stop-opacity:1" />
+    </linearGradient>
+    <!-- Silver/white gradient for leaves -->
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#E8E8E8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#CCCCCC;stop-opacity:1" />
+    </linearGradient>
+    <!-- Gold/orange gradient for circuit leaf -->
+    <linearGradient id="circuitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5A623;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C8680A;stop-opacity:1" />
+    </linearGradient>
+    <!-- Drop shadow filter -->
+    <filter id="leafShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="6" flood-color="#00000033"/>
+    </filter>
+    <filter id="leafShadow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="3" stdDeviation="4" flood-color="#00000022"/>
+    </filter>
+  </defs>
+
+  <!-- ═══ LEAF 1 — Top Left (white/silver with orange flames) ═══ -->
+  <g transform="translate(55, 10)" filter="url(#leafShadow)">
+    <!-- Leaf shape -->
+    <path d="M65,10 C95,10 118,35 118,70 C118,110 85,145 65,158 C45,145 12,110 12,70 C12,35 35,10 65,10 Z"
+          fill="url(#leafGrad)" />
+    <!-- Orange flame lines inside -->
+    <path d="M45,130 C48,110 55,88 52,65 C50,48 42,36 48,25" fill="none" stroke="url(#orangeGrad)" stroke-width="5" stroke-linecap="round"/>
+    <path d="M58,138 C62,116 68,92 65,68 C63,50 55,38 61,26" fill="none" stroke="url(#orangeGrad)" stroke-width="5" stroke-linecap="round"/>
+    <path d="M72,132 C76,112 80,90 78,67 C76,50 70,38 76,27" fill="none" stroke="url(#orangeGrad)" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- ═══ LEAF 2 — Top Right (white/silver with orange flames) ═══ -->
+  <g transform="translate(158, 30)" filter="url(#leafShadow)">
+    <!-- Leaf shape -->
+    <path d="M55,8 C82,8 102,30 102,62 C102,98 72,130 55,142 C38,130 8,98 8,62 C8,30 28,8 55,8 Z"
+          fill="url(#leafGrad)" />
+    <!-- Orange flame lines inside -->
+    <path d="M38,114 C41,96 47,76 44,56 C42,41 35,31 40,22" fill="none" stroke="url(#orangeGrad)" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M50,120 C53,100 58,79 56,57 C54,42 48,32 53,22" fill="none" stroke="url(#orangeGrad)" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M63,115 C66,97 70,77 68,56 C66,41 61,32 66,22" fill="none" stroke="url(#orangeGrad)" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- ═══ LEAF 3 — Bottom Center (circuit board, orange/gold) ═══ -->
+  <g transform="translate(112, 130)" filter="url(#leafShadow2)">
+    <!-- Leaf shape -->
+    <path d="M55,8 C82,8 102,30 102,62 C102,98 72,130 55,142 C38,130 8,98 8,62 C8,30 28,8 55,8 Z"
+          fill="url(#circuitGrad)" />
+    <!-- Circuit board pattern inside (white lines) -->
+    <!-- Vertical trunk lines -->
+    <line x1="35" y1="120" x2="35" y2="50" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+    <line x1="55" y1="125" x2="55" y2="40" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+    <line x1="75" y1="118" x2="75" y2="52" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+    <!-- Horizontal connectors -->
+    <line x1="35" y1="95" x2="55" y2="95" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.85"/>
+    <line x1="55" y1="78" x2="75" y2="78" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.85"/>
+    <line x1="35" y1="65" x2="75" y2="65" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.85"/>
+    <line x1="35" y1="110" x2="55" y2="110" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.85"/>
+    <!-- Circuit node dots -->
+    <circle cx="35" cy="95" r="3.5" fill="white" opacity="0.9"/>
+    <circle cx="55" cy="95" r="3.5" fill="white" opacity="0.9"/>
+    <circle cx="55" cy="78" r="3.5" fill="white" opacity="0.9"/>
+    <circle cx="75" cy="78" r="3.5" fill="white" opacity="0.9"/>
+    <circle cx="35" cy="65" r="3.5" fill="white" opacity="0.9"/>
+    <circle cx="75" cy="65" r="3.5" fill="white" opacity="0.9"/>
+    <circle cx="55" cy="50" r="3.5" fill="white" opacity="0.9"/>
+    <circle cx="35" cy="110" r="3.5" fill="white" opacity="0.9"/>
+    <circle cx="55" cy="110" r="3.5" fill="white" opacity="0.9"/>
+    <!-- Small end caps -->
+    <circle cx="35" cy="50" r="2.5" fill="white" opacity="0.7"/>
+    <circle cx="75" cy="52" r="2.5" fill="white" opacity="0.7"/>
+  </g>
+
+  <!-- ═══ WORDMARK ═══ -->
+  <!-- FIELDS — orange/gold bold -->
+  <text x="160" y="318"
+        font-family="Poppins, Arial Black, sans-serif"
+        font-weight="900"
+        font-size="72"
+        fill="url(#orangeGrad)"
+        text-anchor="middle"
+        letter-spacing="4">FIELDS</text>
+
+  <!-- MOTORS — dark charcoal bold -->
+  <text x="160" y="370"
+        font-family="Poppins, Arial Black, sans-serif"
+        font-weight="700"
+        font-size="52"
+        fill="#1A1A1A"
+        text-anchor="middle"
+        letter-spacing="10">MOTORS</text>
+</svg>

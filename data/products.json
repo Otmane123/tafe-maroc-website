@@ -1,0 +1,437 @@
+[
+  {
+    "id": "tafe-45di-2wd",
+    "brand": "TAFE",
+    "model": "45 DI 2WD",
+    "hp": 47,
+    "drive": "2WD",
+    "category": "polyvalent",
+    "engine": "Simpsons S325, 4 Stroke, Water Cooled Diesel, 3 Cyl / 2500 cc",
+    "transmission": "8 Av + 2 Ar, Sliding Mesh (option : Side Shift)",
+    "hydraulics": "18 lpm (16 en option) @ 2250 tr/min",
+    "pto": "Indépendant, 540 tr/min",
+    "steering": "Mécanique / Hydrostatique",
+    "brakes": "Tambour / Disque Sec Étanche",
+    "tyres": "Avant : 6.00×16 — Arrière : 12.4×28 / 13.6×38",
+    "fuel_tank": 47,
+    "standard_features": [
+      "Stabilisateur de chaîne",
+      "Chaîne de retenue",
+      "Attelage réglable",
+      "Garde-boue plat",
+      "Mustkit"
+    ],
+    "optional_features": [
+      "Garde-boue coquille",
+      "Prise de courant 7 broches",
+      "Siège avec ceinture",
+      "Plaque d'immatriculation avec éclairage",
+      "Kit tube à huile",
+      "Barre de traction oscillante",
+      "Attelage automatique",
+      "Lest avant/arrière",
+      "Pare-chocs avant",
+      "Valve de blocage transport"
+    ],
+    "subsidy_eligible": true,
+    "image": "/assets/images/products/tafe-45di-2wd.webp",
+    "featured": true,
+    "translations": {
+      "fr": {
+        "description": "Le TAFE 45 DI 2WD est le tracteur d'entrée de gamme idéal pour les exploitations de petite et moyenne taille. Motorisé par le robuste Simpsons S325, il offre fiabilité, économie de carburant et polyvalence pour tous les travaux agricoles au Maroc.",
+        "tagline": "Fiabilité éprouvée, économie garantie"
+      },
+      "ar": {
+        "description": "جرار TAFE 45 DI ثنائي الدفع هو الخيار المثالي للمزارع الصغيرة والمتوسطة. مزود بمحرك سيمبسونز S325 القوي، يوفر موثوقية وكفاءة في استهلاك الوقود لجميع أعمال الحقل.",
+        "tagline": "موثوقية مثبتة، اقتصاد مضمون"
+      },
+      "en": {
+        "description": "The TAFE 45 DI 2WD is the ideal entry-level tractor for small and medium farms. Powered by the robust Simpsons S325 engine, it delivers reliability, fuel economy and versatility for all farming operations in Morocco.",
+        "tagline": "Proven reliability, guaranteed economy"
+      }
+    }
+  },
+  {
+    "id": "tafe-45di-4wd",
+    "brand": "TAFE",
+    "model": "45 DI PD 4WD",
+    "hp": 47,
+    "drive": "4WD",
+    "category": "polyvalent",
+    "engine": "Simpsons S325, 4 Stroke, Water Cooled Diesel, 3 Cyl / 2500 cc",
+    "transmission": "8 Av + 2 Ar, Sliding Mesh — Pont arrière planétaire",
+    "hydraulics": "18 lpm @ 2250 tr/min",
+    "pto": "Indépendant, 540 tr/min",
+    "steering": "Hydrostatique",
+    "brakes": "Bain d'huile",
+    "tyres": "Avant : 6×16 (2WD) / 8.3×24 (4WD) — Arrière : 13.6×28",
+    "fuel_tank": 47,
+    "standard_features": [
+      "Chaîne de retenue",
+      "Stabilisateur de chaîne",
+      "Attelage automatique combiné",
+      "Mustkit",
+      "Valve de blocage transport",
+      "Plaque de lest avant"
+    ],
+    "optional_features": [
+      "Lest avant et arrière",
+      "Blocage de différentiel"
+    ],
+    "subsidy_eligible": true,
+    "image": "/assets/images/products/tafe-45di-4wd.webp",
+    "featured": true,
+    "translations": {
+      "fr": {
+        "description": "Le TAFE 45 DI PD 4WD apporte la traction intégrale aux exploitations exigeantes. Son pont planétaire et sa direction hydrostatique garantissent une motricité optimale dans les terrains difficiles et les sols lourds de la Chaouia.",
+        "tagline": "Traction totale pour tous les terrains"
+      },
+      "ar": {
+        "description": "يوفر جرار TAFE 45 DI PD رباعي الدفع الدفع الكلي للمزارع الصعبة. يضمن محوره الكوكبي وتوجيهه الهيدروستاتيكي أفضل قدرة على الحركة في التضاريس الصعبة.",
+        "tagline": "دفع كلي لكل التضاريس"
+      },
+      "en": {
+        "description": "The TAFE 45 DI PD 4WD brings four-wheel drive to demanding farms. Its planetary axle and hydrostatic steering guarantee optimal traction on difficult terrain and heavy soils.",
+        "tagline": "Total traction for all terrains"
+      }
+    }
+  },
+  {
+    "id": "tafe-6300di-2wd",
+    "brand": "TAFE",
+    "model": "6300 DI 2WD",
+    "hp": 60,
+    "drive": "2WD",
+    "category": "puissant",
+    "engine": "Simpson S433, 4 Stroke, Direct Injection, Water Cooled, 4 Cyl / 3300 cc",
+    "transmission": "8 Av + 2 Ar, Sliding Mesh — Pont à réduction planétaire",
+    "hydraulics": "18 lpm @ 2300 tr/min (option pompe auxiliaire 40.5 lpm)",
+    "pto": "Indépendant, 540 tr/min",
+    "steering": "Hydrostatique",
+    "brakes": "Bain d'huile",
+    "tyres": "Avant : 7.5×16 — Arrière : 16.9×28",
+    "fuel_tank": 70,
+    "standard_features": [
+      "Plaque de lest avant",
+      "Stabilisateur de chaîne",
+      "Prise de courant 7 broches",
+      "Plaque d'immatriculation arrière",
+      "Mustkit"
+    ],
+    "optional_features": [
+      "ROPS",
+      "Canopy",
+      "Lest avant et arrière",
+      "Soupape simple distributeur"
+    ],
+    "subsidy_eligible": true,
+    "image": "/assets/images/products/tafe-6300di-2wd.webp",
+    "featured": false,
+    "translations": {
+      "fr": {
+        "description": "Le TAFE 6300 DI 2WD est un tracteur puissant de 60 CV conçu pour les travaux de grande culture. Son moteur 4 cylindres à injection directe offre couple et endurance pour les longues journées de travail.",
+        "tagline": "60 CV de puissance pure pour vos champs"
+      },
+      "ar": {
+        "description": "جرار TAFE 6300 DI ثنائي الدفع بقوة 60 حصاناً مصمم لأعمال الزراعة الكبيرة. يوفر محركه رباعي الأسطوانات بالحقن المباشر عزماً واحتمالاً لأيام العمل الطويلة.",
+        "tagline": "60 حصاناً من القوة الخالصة لحقولك"
+      },
+      "en": {
+        "description": "The TAFE 6300 DI 2WD is a powerful 60 HP tractor designed for large-scale farming. Its 4-cylinder direct injection engine provides torque and endurance for long working days.",
+        "tagline": "60 HP of pure power for your fields"
+      }
+    }
+  },
+  {
+    "id": "tafe-6300di-4wd",
+    "brand": "TAFE",
+    "model": "6300 DI 4WD",
+    "hp": 60,
+    "drive": "4WD",
+    "category": "puissant",
+    "engine": "Simpson S433, 4 Stroke, Direct Injection, Water Cooled, 4 Cyl / 3300 cc",
+    "transmission": "8 Av + 2 Ar, Sliding Mesh — Pont à réduction planétaire",
+    "hydraulics": "18 lpm @ 2300 tr/min (option pompe auxiliaire 40.5 lpm)",
+    "pto": "Indépendant, 540 tr/min",
+    "steering": "Hydrostatique",
+    "brakes": "Bain d'huile",
+    "tyres": "Avant : 9.5×24 — Arrière : 16.9×28",
+    "fuel_tank": 70,
+    "standard_features": [
+      "Plaque de lest avant",
+      "Stabilisateur de chaîne",
+      "Prise de courant 7 broches",
+      "Plaque d'immatriculation arrière",
+      "Mustkit"
+    ],
+    "optional_features": [
+      "ROPS",
+      "Canopy",
+      "Lest avant et arrière",
+      "Soupape simple distributeur"
+    ],
+    "subsidy_eligible": true,
+    "image": "/assets/images/products/tafe-6300di-2wd.webp",
+    "featured": false,
+    "translations": {
+      "fr": {
+        "description": "Le TAFE 6300 DI 4WD combine la puissance de 60 CV avec la traction intégrale. Idéal pour les exploitations en terrain vallonné ou les sols argileux lourds de la plaine du Gharb et du Doukkala.",
+        "tagline": "60 CV 4×4 pour aller plus loin"
+      },
+      "ar": {
+        "description": "يجمع جرار TAFE 6300 DI رباعي الدفع بين قوة 60 حصاناً والدفع الكلي. مثالي للمزارع ذات التضاريس الوعرة أو التربة الطينية الثقيلة.",
+        "tagline": "60 حصاناً دفع رباعي للذهاب أبعد"
+      },
+      "en": {
+        "description": "The TAFE 6300 DI 4WD combines 60 HP power with four-wheel drive. Ideal for farms on hilly terrain or heavy clay soils of the Gharb and Doukkala plains.",
+        "tagline": "60 HP 4×4 to go further"
+      }
+    }
+  },
+  {
+    "id": "tafe-6530di-4wd",
+    "brand": "TAFE",
+    "model": "6530 DI 4WD",
+    "hp": 63,
+    "drive": "4WD",
+    "category": "puissant",
+    "engine": "Simpsons SJ436E, 4 Stroke, Turbo Intercooler, Water Cooled, 4 Cyl / 3600 cc",
+    "transmission": "8 Av + 2 Ar, Sliding Mesh — Pont planétaire + blocage de différentiel",
+    "hydraulics": "18 lpm @ 2300 tr/min + pompe auxiliaire 40.5 lpm",
+    "pto": "Indépendant, 540 tr/min",
+    "steering": "Hydrostatique",
+    "brakes": "Bain d'huile",
+    "tyres": "Avant : 9.5×24 — Arrière : 16.9×28",
+    "fuel_tank": 60,
+    "standard_features": [
+      "Double soupape distributeur",
+      "Barre de traction oscillante",
+      "Lest de roues arrière",
+      "Siège avec ceinture",
+      "Plaque de lest avant",
+      "Compresseur"
+    ],
+    "optional_features": [
+      "ROPS",
+      "Lest avant"
+    ],
+    "subsidy_eligible": true,
+    "image": "/assets/images/products/tafe-6530di-4wd.webp",
+    "featured": false,
+    "translations": {
+      "fr": {
+        "description": "Le TAFE 6530 DI 4WD est le choix des agriculteurs exigeants. Son moteur turbo intercooler de 63 CV et son double distributeur hydraulique en font un partenaire redoutable pour la polyculture intensive.",
+        "tagline": "Turbo intercooler — La puissance à la demande"
+      },
+      "ar": {
+        "description": "جرار TAFE 6530 DI رباعي الدفع هو خيار المزارعين المتطلبين. يجعله محركه التوربيني بـ 63 حصاناً وموزع هيدروليكي مزدوج شريكاً لا يقهر للزراعة المكثفة.",
+        "tagline": "توربو إنتركولر — القوة عند الطلب"
+      },
+      "en": {
+        "description": "The TAFE 6530 DI 4WD is the choice of demanding farmers. Its 63 HP turbo intercooler engine and double hydraulic distributor make it a formidable partner for intensive mixed farming.",
+        "tagline": "Turbo intercooler — Power on demand"
+      }
+    }
+  },
+  {
+    "id": "tafe-7502-4wd",
+    "brand": "TAFE",
+    "model": "7502 4WD",
+    "hp": 75,
+    "drive": "4WD",
+    "category": "puissant",
+    "engine": "Simpsons S440, 4 Stroke, Direct Injection, Water Cooled, 4 Cyl / 4000 cc",
+    "transmission": "8 Av + 2 Ar, Sliding Mesh (option 12 Av + 4 Ar, Synchromesh partiel) — Pont planétaire + blocage",
+    "hydraulics": "18 lpm @ 2300 tr/min (option pompe auxiliaire 40.5 lpm)",
+    "pto": "Indépendant, 540 tr/min",
+    "steering": "Hydrostatique",
+    "brakes": "Bain d'huile",
+    "tyres": "Avant : 12.4×24 — Arrière : 18.4×30",
+    "fuel_tank": 70,
+    "standard_features": [
+      "Stabilisateur de chaîne",
+      "Plaque de lest avant",
+      "Prise de courant 7 broches",
+      "Siège avec ceinture",
+      "Attelage avant",
+      "Plaque d'immatriculation avec éclairage",
+      "Chaîne de retenue",
+      "Kit tube à huile"
+    ],
+    "optional_features": [
+      "ROPS",
+      "Canopy",
+      "Barre de traction oscillante",
+      "Lest avant",
+      "Lest de roues arrière"
+    ],
+    "subsidy_eligible": true,
+    "image": "/assets/images/products/tafe-7502-4wd.webp",
+    "featured": true,
+    "translations": {
+      "fr": {
+        "description": "Le TAFE 7502 4WD est le meilleur vendeur de FieldsMotors. Avec ses 75 CV et son gros moteur S440 de 4000 cc, il est taillé pour les grandes exploitations céréalières et maraîchères du Maroc. Éligible à la subvention FDA jusqu'à 30%.",
+        "tagline": "Le best-seller — 75 CV de confiance"
+      },
+      "ar": {
+        "description": "جرار TAFE 7502 رباعي الدفع هو الأكثر مبيعاً لدى FieldsMotors. بقوة 75 حصاناً ومحرك S440 بسعة 4000 سم³، فهو مصمم للمزارع الكبيرة لزراعة الحبوب والخضروات في المغرب. مؤهل لدعم FDA بنسبة تصل إلى 30%.",
+        "tagline": "الأكثر مبيعاً — 75 حصاناً من الثقة"
+      },
+      "en": {
+        "description": "The TAFE 7502 4WD is FieldsMotors' best seller. With 75 HP and the large S440 4000 cc engine, it is built for large cereal and vegetable farms in Morocco. Eligible for FDA subsidy up to 30%.",
+        "tagline": "The best-seller — 75 HP of trust"
+      }
+    }
+  },
+  {
+    "id": "tafe-8502-4wd",
+    "brand": "TAFE",
+    "model": "8502 4WD",
+    "hp": 80,
+    "drive": "4WD",
+    "category": "pro",
+    "engine": "Simpsons S440, 4 Stroke, Direct Injection, Water Cooled, 4 Cyl / 4000 cc",
+    "transmission": "8 Av + 2 Ar, Sliding Mesh (option 12 Av + 4 Ar, Synchromesh partiel) — Pont planétaire + blocage",
+    "hydraulics": "18 lpm @ 2300 tr/min (option pompe auxiliaire 40.5 lpm)",
+    "pto": "Indépendant, 540 tr/min",
+    "steering": "Hydrostatique",
+    "brakes": "Bain d'huile",
+    "tyres": "Avant : 12.4×24 — Arrière : 13.6×38",
+    "fuel_tank": 70,
+    "standard_features": [
+      "Stabilisateur de chaîne",
+      "Plaque de lest avant",
+      "Prise de courant 7 broches",
+      "Siège avec ceinture",
+      "Attelage avant",
+      "Plaque d'immatriculation avec éclairage",
+      "Chaîne de retenue",
+      "Kit tube à huile"
+    ],
+    "optional_features": [
+      "Cabine",
+      "ROPS",
+      "Canopy",
+      "Barre de traction oscillante",
+      "Lest avant",
+      "Lest de roues arrière"
+    ],
+    "subsidy_eligible": true,
+    "image": "/assets/images/products/tafe-8502-4wd.webp",
+    "featured": true,
+    "translations": {
+      "fr": {
+        "description": "Le TAFE 8502 4WD monte en puissance avec 80 CV pour les exploitations professionnelles. Disponible en option cabine pour un confort optimal toute l'année. Le choix des agriculteurs qui veulent aller plus vite et travailler plus.",
+        "tagline": "80 CV professionnels, disponible avec cabine"
+      },
+      "ar": {
+        "description": "يرتقي جرار TAFE 8502 رباعي الدفع إلى مستوى أعلى بقوة 80 حصاناً للمزارع الاحترافية. متاح بخيار الكابينة لأقصى درجات الراحة على مدار العام.",
+        "tagline": "80 حصاناً احترافياً، متاح مع كابينة"
+      },
+      "en": {
+        "description": "The TAFE 8502 4WD steps up with 80 HP for professional farms. Available with optional cabin for optimal year-round comfort. The choice of farmers who want to work faster and harder.",
+        "tagline": "80 professional HP, available with cabin"
+      }
+    }
+  },
+  {
+    "id": "tafe-9502-4wd",
+    "brand": "TAFE",
+    "model": "9502 4WD",
+    "hp": 90,
+    "drive": "4WD",
+    "category": "pro",
+    "engine": "Simpsons ST440 E1, 4 Stroke, Turbo Intercooler, Direct Injection, 4 Cyl / 4000 cc",
+    "transmission": "12 Av + 4 Ar, Synchromesh partiel — Pont planétaire + blocage de différentiel",
+    "hydraulics": "15.4 lpm @ 2200 tr/min + pompe auxiliaire 32.3 lpm",
+    "pto": "Indépendant, 540 tr/min",
+    "steering": "Hydrostatique",
+    "brakes": "Bain d'huile",
+    "tyres": "Avant : 12.4×24 — Arrière : 18.4×30",
+    "fuel_tank": 85,
+    "standard_features": [
+      "Double soupape distributeur",
+      "Stabilisateur de chaîne",
+      "Plaque de lest avant",
+      "Prise de courant 7 broches",
+      "Siège avec ceinture",
+      "Attelage avant",
+      "Plaque d'immatriculation avec éclairage",
+      "ROPS",
+      "Barre de traction oscillante",
+      "Lest avant",
+      "Lest de roues arrière",
+      "Mustkit"
+    ],
+    "optional_features": [
+      "Canopy"
+    ],
+    "subsidy_eligible": true,
+    "image": "/assets/images/products/tafe-9502-4wd.webp",
+    "featured": true,
+    "translations": {
+      "fr": {
+        "description": "Le TAFE 9502 4WD turbo intercooler est la référence des grandes exploitations. Ses 90 CV @ 2050 tr/min, son réservoir de 85 L et ses 12 vitesses avant en font un outil imbattable pour les grands domaines agricoles marocains.",
+        "tagline": "90 CV Turbo Intercooler — La référence"
+      },
+      "ar": {
+        "description": "جرار TAFE 9502 رباعي الدفع بالتوربو والإنتركولر هو المرجع للمزارع الكبيرة. قوة 90 حصاناً وخزان 85 لتراً و12 سرعة أمامية تجعله أداة لا تُقهر للضيعات الزراعية المغربية الكبرى.",
+        "tagline": "90 حصاناً توربو إنتركولر — المرجع"
+      },
+      "en": {
+        "description": "The TAFE 9502 4WD turbo intercooler is the benchmark for large farms. Its 90 HP @ 2050 rpm, 85L tank and 12 forward gears make it an unbeatable tool for Morocco's large agricultural estates.",
+        "tagline": "90 HP Turbo Intercooler — The benchmark"
+      }
+    }
+  },
+  {
+    "id": "tafe-1002-4wd",
+    "brand": "TAFE",
+    "model": "1002 4WD",
+    "hp": 100,
+    "drive": "4WD",
+    "category": "pro",
+    "engine": "Simpsons ST440 E2, 4 Stroke, Turbo Intercooler, Direct Injection, 4 Cyl / 4000 cc",
+    "transmission": "12 Av + 4 Ar, Synchromesh partiel — Pont planétaire + blocage de différentiel",
+    "hydraulics": "18 lpm @ 2300 tr/min + pompe auxiliaire 35.5 lpm",
+    "pto": "Indépendant, 540 tr/min",
+    "steering": "Hydrostatique",
+    "brakes": "Bain d'huile",
+    "tyres": "Avant : 14.9×28 — Arrière : 18.4×38",
+    "fuel_tank": 85,
+    "standard_features": [
+      "Double soupape distributeur",
+      "Stabilisateur de chaîne",
+      "Plaque de lest avant",
+      "Prise de courant 7 broches",
+      "Siège avec ceinture",
+      "Attelage avant",
+      "Plaque d'immatriculation avec éclairage",
+      "ROPS",
+      "Barre de traction oscillante",
+      "Lest avant",
+      "Lest de roues arrière",
+      "Mustkit"
+    ],
+    "optional_features": [
+      "Canopy"
+    ],
+    "subsidy_eligible": true,
+    "image": "/assets/images/products/tafe-1002-4wd.webp",
+    "featured": false,
+    "translations": {
+      "fr": {
+        "description": "Le TAFE 1002 4WD est le fleuron de la gamme Heritage. Avec 100 CV et le moteur ST440 E2 turbo intercooler, il domine les travaux de grande envergure : labour profond, gros outils portés, grandes parcelles.",
+        "tagline": "100 CV — Le sommet de la gamme TAFE"
+      },
+      "ar": {
+        "description": "جرار TAFE 1002 رباعي الدفع هو تاج مجموعة Heritage. بقوة 100 حصاناً ومحرك ST440 E2 التوربيني، يسيطر على الأعمال الكبيرة: الحرث العميق، الأدوات الثقيلة المحمولة، القطع الكبيرة.",
+        "tagline": "100 حصاناً — قمة مجموعة TAFE"
+      },
+      "en": {
+        "description": "The TAFE 1002 4WD is the flagship of the Heritage range. With 100 HP and the ST440 E2 turbo intercooler engine, it dominates large-scale operations: deep ploughing, heavy mounted implements, large parcels.",
+        "tagline": "100 HP — The pinnacle of the TAFE range"
+      }
+    }
+  }
+]

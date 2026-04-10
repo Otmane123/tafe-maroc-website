@@ -1,0 +1,342 @@
+/* ============================================================
+   FieldsMotors Agricole SARL - RTL Arabic Stylesheet
+   Loaded dynamically when AR language is active
+   ============================================================ */
+
+[dir="rtl"] {
+  font-family: var(--font-arabic), var(--font-body);
+  text-align: right;
+}
+
+/* ── Typography RTL ── */
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+  font-family: var(--font-arabic), var(--font-heading);
+  letter-spacing: 0;
+}
+
+/* ── Logo ── */
+[dir="rtl"] .logo {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .logo-text {
+  text-align: right;
+}
+
+/* ── Navigation ── */
+[dir="rtl"] .main-nav {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .main-nav a.active::after {
+  left: auto;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+[dir="rtl"] .header-inner {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .header-actions {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .mobile-nav a {
+  text-align: right;
+}
+
+[dir="rtl"] .mobile-nav a:hover,
+[dir="rtl"] .mobile-nav a.active {
+  padding-inline-start: 16px;
+  padding-inline-end: 24px;
+}
+
+/* ── Hero ── */
+[dir="rtl"] .hero-content {
+  text-align: right;
+}
+
+[dir="rtl"] .hero-eyebrow {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .hero-actions {
+  flex-direction: row-reverse;
+}
+
+/* ── Breadcrumb ── */
+[dir="rtl"] .breadcrumb {
+  flex-direction: row-reverse;
+}
+
+/* ── Buttons ── */
+[dir="rtl"] .btn {
+  flex-direction: row-reverse;
+}
+
+/* ── Stats ── */
+[dir="rtl"] .stats-grid {
+  direction: rtl;
+}
+
+[dir="rtl"] .stat-item {
+  border-right: none;
+  border-left: 1px solid rgba(255,255,255,0.08);
+}
+
+[dir="rtl"] .stat-item:last-child {
+  border-left: none;
+}
+
+/* ── Timeline ── */
+[dir="rtl"] .timeline {
+  padding-inline-start: 0;
+  padding-inline-end: 40px;
+}
+
+[dir="rtl"] .timeline::before {
+  left: auto;
+  right: 14px;
+}
+
+[dir="rtl"] .timeline-item {
+  transform: translateX(20px);
+  text-align: right;
+}
+
+[dir="rtl"] .timeline-item.visible {
+  transform: translateX(0);
+}
+
+[dir="rtl"] .timeline-dot {
+  left: auto;
+  right: -34px;
+}
+
+/* ── Section Labels ── */
+[dir="rtl"] .section-subtitle {
+  text-align: right;
+}
+
+[dir="rtl"] .text-center .section-subtitle {
+  text-align: center;
+}
+
+/* ── Product Cards ── */
+[dir="rtl"] .product-card-badges {
+  left: auto;
+  right: 12px;
+}
+
+[dir="rtl"] .product-card-actions {
+  flex-direction: row-reverse;
+}
+
+/* ── Filter Bar ── */
+[dir="rtl"] .filter-bar {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .filter-pills {
+  flex-direction: row-reverse;
+}
+
+/* ── Service Cards ── */
+[dir="rtl"] .service-card {
+  text-align: right;
+}
+
+[dir="rtl"] .service-icon {
+  margin-inline-start: 0;
+  margin-inline-end: auto;
+}
+
+/* Wait, service icon should still be centered in RTL */
+[dir="rtl"] .service-icon {
+  margin: 0 auto 20px;
+}
+
+/* ── Founder Card ── */
+[dir="rtl"] .founder-card {
+  direction: rtl;
+}
+
+[dir="rtl"] .founder-name,
+[dir="rtl"] .founder-role,
+[dir="rtl"] .founder-bio {
+  text-align: right;
+}
+
+/* ── Footer ── */
+[dir="rtl"] .footer-grid {
+  direction: rtl;
+}
+
+[dir="rtl"] .footer-tagline {
+  text-align: right;
+}
+
+[dir="rtl"] .footer-links a {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .footer-links a::before {
+  content: '‹';
+}
+
+[dir="rtl"] .footer-links a:hover {
+  padding-inline-start: 0;
+  padding-inline-end: 6px;
+}
+
+[dir="rtl"] .footer-contact-items {
+  direction: rtl;
+}
+
+[dir="rtl"] .footer-contact-item {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+[dir="rtl"] .footer-bottom {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .social-links {
+  flex-direction: row-reverse;
+}
+
+/* ── Contact ── */
+[dir="rtl"] .contact-grid {
+  direction: rtl;
+}
+
+[dir="rtl"] .contact-info-card {
+  text-align: right;
+}
+
+[dir="rtl"] .contact-info-grid {
+  direction: rtl;
+}
+
+[dir="rtl"] .form-card {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .form-select {
+  background-position: left 12px center;
+  padding-right: 16px;
+  padding-left: 40px;
+}
+
+[dir="rtl"] .form-row {
+  direction: rtl;
+}
+
+/* ── Gallery ── */
+[dir="rtl"] .gallery-filter {
+  flex-direction: row-reverse;
+}
+
+/* ── News ── */
+[dir="rtl"] .news-card-meta {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .news-card-body {
+  text-align: right;
+}
+
+/* ── Services Metrics ── */
+[dir="rtl"] .metric-header {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .progress-fill {
+  background: linear-gradient(270deg, var(--color-orange), #f59042);
+}
+
+/* ── WhatsApp Float ── */
+[dir="rtl"] .whatsapp-float {
+  right: auto;
+  left: 28px;
+}
+
+@media (max-width: 480px) {
+  [dir="rtl"] .whatsapp-float {
+    right: auto;
+    left: 16px;
+  }
+}
+
+/* ── Achievements & Team ── */
+[dir="rtl"] .achievements-grid,
+[dir="rtl"] .team-grid {
+  direction: rtl;
+}
+
+/* ── Subsidy Callout ── */
+[dir="rtl"] .subsidy-callout {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+/* ── Compare Bar ── */
+[dir="rtl"] .compare-bar {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .compare-bar-items {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .compare-item {
+  flex-direction: row-reverse;
+}
+
+/* ── CTA Section ── */
+[dir="rtl"] .cta-actions {
+  flex-direction: row-reverse;
+}
+
+/* ── Page Hero ── */
+[dir="rtl"] .page-hero {
+  text-align: right;
+}
+
+/* ── Infra Cards ── */
+[dir="rtl"] .infra-card-header {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .infra-card-body {
+  text-align: right;
+}
+
+/* ── Mobile Menu ── */
+@media (max-width: 768px) {
+  [dir="rtl"] .mobile-nav a {
+    text-align: right;
+  }
+
+  [dir="rtl"] .mobile-lang {
+    flex-direction: row-reverse;
+  }
+
+  [dir="rtl"] .hero-actions {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  [dir="rtl"] .cta-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+}

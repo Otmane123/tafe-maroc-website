@@ -1,0 +1,154 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+locale: "fr"
+
+collections:
+
+  # ── Products ────────────────────────────────────────────────────────────────
+  - name: "products"
+    label: "Produits (Tracteurs TAFE)"
+    label_singular: "Produit"
+    folder: "data/products"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "model"
+    preview_path: "products.html"
+    fields:
+      - { label: "ID", name: "id", widget: "string" }
+      - { label: "Marque", name: "brand", widget: "string", default: "TAFE" }
+      - { label: "Modèle", name: "model", widget: "string" }
+      - { label: "Puissance (CV)", name: "hp", widget: "number" }
+      - label: "Transmission"
+        name: "drive"
+        widget: "select"
+        options: ["2WD", "4WD"]
+      - label: "Catégorie"
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "Compact", value: "compact" }
+          - { label: "Polyvalent", value: "polyvalent" }
+          - { label: "Puissant", value: "puissant" }
+          - { label: "Pro", value: "pro" }
+      - { label: "Moteur", name: "engine", widget: "string" }
+      - { label: "Transmission (détail)", name: "transmission", widget: "string" }
+      - { label: "Hydraulique", name: "hydraulics", widget: "string" }
+      - { label: "Prise de Force", name: "pto", widget: "string" }
+      - { label: "Direction", name: "steering", widget: "string" }
+      - { label: "Freins", name: "brakes", widget: "string" }
+      - { label: "Pneus", name: "tyres", widget: "string" }
+      - label: "Équipements standard"
+        name: "standard_features"
+        widget: "list"
+        field: { label: "Équipement", name: "feature", widget: "string" }
+      - label: "Options"
+        name: "optional_features"
+        widget: "list"
+        field: { label: "Option", name: "option", widget: "string" }
+      - { label: "Éligible subvention FDA", name: "subsidy_eligible", widget: "boolean", default: true }
+      - { label: "Photo (WebP)", name: "image", widget: "image" }
+      - { label: "Mis en avant (page d'accueil)", name: "featured", widget: "boolean", default: false }
+      - label: "Traductions"
+        name: "translations"
+        widget: "object"
+        fields:
+          - label: "Français"
+            name: "fr"
+            widget: "object"
+            fields:
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Accroche", name: "tagline", widget: "string" }
+          - label: "العربية"
+            name: "ar"
+            widget: "object"
+            fields:
+              - { label: "الوصف", name: "description", widget: "text" }
+              - { label: "الشعار", name: "tagline", widget: "string" }
+          - label: "English"
+            name: "en"
+            widget: "object"
+            fields:
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Tagline", name: "tagline", widget: "string" }
+
+  # ── News / Actualités ────────────────────────────────────────────────────────
+  - name: "news"
+    label: "Actualités"
+    label_singular: "Article"
+    folder: "data/news"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "news.html"
+    sortable_fields: ["date", "title"]
+    fields:
+      - { label: "Titre (FR)", name: "title", widget: "string" }
+      - { label: "Titre (AR)", name: "title_ar", widget: "string", required: false }
+      - { label: "Titre (EN)", name: "title_en", widget: "string", required: false }
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - label: "Catégorie"
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "Actualité", value: "news" }
+          - { label: "Promotion", value: "promo" }
+          - { label: "Événement", value: "event" }
+          - { label: "Produit", value: "product" }
+      - { label: "Image de couverture", name: "image", widget: "image" }
+      - { label: "Résumé (FR)", name: "excerpt", widget: "text" }
+      - { label: "Résumé (AR)", name: "excerpt_ar", widget: "text", required: false }
+      - { label: "Résumé (EN)", name: "excerpt_en", widget: "text", required: false }
+      - { label: "Contenu (FR)", name: "body", widget: "markdown" }
+      - { label: "Contenu (AR)", name: "body_ar", widget: "markdown", required: false }
+      - { label: "Contenu (EN)", name: "body_en", widget: "markdown", required: false }
+      - { label: "Publié", name: "published", widget: "boolean", default: true }
+
+  # ── Gallery ──────────────────────────────────────────────────────────────────
+  - name: "gallery"
+    label: "Galerie Photos"
+    label_singular: "Photo"
+    folder: "data/gallery"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titre / Légende (FR)", name: "caption", widget: "string" }
+      - { label: "Légende (AR)", name: "caption_ar", widget: "string", required: false }
+      - { label: "Légende (EN)", name: "caption_en", widget: "string", required: false }
+      - label: "Catégorie"
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "Tracteurs", value: "tractors" }
+          - { label: "Expositions", value: "exhibitions" }
+          - { label: "Showroom", value: "showroom" }
+          - { label: "Équipe", value: "team" }
+      - { label: "Photo (WebP)", name: "src", widget: "image" }
+      - { label: "Ordre d'affichage", name: "order", widget: "number", default: 99 }
+      - { label: "Visible", name: "published", widget: "boolean", default: true }
+
+  # ── Site Settings ────────────────────────────────────────────────────────────
+  - name: "settings"
+    label: "Paramètres du site"
+    files:
+      - label: "Informations générales"
+        name: "general"
+        file: "data/settings.json"
+        fields:
+          - { label: "Numéro WhatsApp", name: "whatsapp", widget: "string", default: "212677184906" }
+          - { label: "Téléphone principal", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Adresse", name: "address", widget: "text" }
+          - label: "Réseaux sociaux"
+            name: "social"
+            widget: "object"
+            fields:
+              - { label: "Facebook URL", name: "facebook", widget: "string", required: false }
+              - { label: "Instagram URL", name: "instagram", widget: "string", required: false }
+              - { label: "TikTok URL", name: "tiktok", widget: "string", required: false }
+              - { label: "YouTube URL", name: "youtube", widget: "string", required: false }
+          - { label: "ID Formspree", name: "formspree_id", widget: "string" }
+          - { label: "Mode maintenance", name: "maintenance", widget: "boolean", default: false }

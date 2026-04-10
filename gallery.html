@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galerie Photos | FieldsMotors Agricole</title>
+  <meta name="description" content="Galerie photos FieldsMotors Agricole : showroom, tracteurs TAFE, expositions agricoles et équipe. Sidi Bennour, Maroc." />
+  <link rel="canonical" href="https://www.fieldsmotors.ma/gallery.html" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon-96x96.png" />
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#F37020" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-nav">Aller au contenu principal</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="/" class="logo" aria-label="FieldsMotors Agricole - Accueil">
+        <img src="/assets/images/logo.png" alt="FieldsMotors Logo" width="48" height="48" onerror="this.style.display='none'" />
+        <div class="logo-text"><span class="logo-name">Fields<span>Motors</span></span><span class="logo-tagline">Agricole</span></div>
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="/" data-i18n="nav.home">Accueil</a>
+        <a href="/about.html" data-i18n="nav.about">À Propos</a>
+        <a href="/products.html" data-i18n="nav.products">Produits</a>
+        <a href="/services.html" data-i18n="nav.services">Services</a>
+        <a href="/news.html" data-i18n="nav.news">Actualités</a>
+        <a href="/gallery.html" data-i18n="nav.gallery">Galerie</a>
+        <a href="/contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switcher" role="group" aria-label="Changer de langue">
+          <button class="lang-btn active" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="ar">AR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <a href="/contact.html" class="btn btn-primary btn-sm" data-i18n="nav.quote">Demander un Devis</a>
+        <button class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Navigation mobile">
+    <a href="/" data-i18n="nav.home">Accueil</a>
+    <a href="/about.html" data-i18n="nav.about">À Propos</a>
+    <a href="/products.html" data-i18n="nav.products">Produits</a>
+    <a href="/services.html" data-i18n="nav.services">Services</a>
+    <a href="/news.html" data-i18n="nav.news">Actualités</a>
+    <a href="/gallery.html" data-i18n="nav.gallery">Galerie</a>
+    <a href="/contact.html" data-i18n="nav.contact">Contact</a>
+    <div class="mobile-lang">
+      <button class="lang-btn" data-lang="fr">FR</button>
+      <button class="lang-btn" data-lang="ar">AR</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <div class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+          <a href="/" data-i18n="nav.home">Accueil</a>
+          <span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <span data-i18n="nav.gallery">Galerie</span>
+        </nav>
+        <h1 data-i18n="gallery.title">Galerie Photos</h1>
+        <p data-i18n="gallery.subtitle">Notre showroom, nos équipements et nos événements</p>
+      </div>
+    </div>
+
+    <section class="section" aria-labelledby="gallery-heading">
+      <div class="container">
+        <h2 class="sr-only" id="gallery-heading">Galerie Photos</h2>
+
+        <!-- Filter Tabs -->
+        <div class="gallery-filter" role="group" aria-label="Filtrer la galerie">
+          <button class="filter-pill active" data-filter="all" data-i18n="gallery.filter_all">Tous</button>
+          <button class="filter-pill" data-filter="tractors" data-i18n="gallery.filter_tractors">Tracteurs & Équipements</button>
+          <button class="filter-pill" data-filter="exhibitions" data-i18n="gallery.filter_exhibitions">Salons & Expositions</button>
+          <button class="filter-pill" data-filter="showroom" data-i18n="gallery.filter_showroom">Showroom</button>
+          <button class="filter-pill" data-filter="team" data-i18n="gallery.filter_team">Équipe</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <!--
+          INSTRUCTIONS: Replace placeholder items below with real photos.
+          For each image:
+            - Place the WebP file in /assets/images/gallery/
+            - Set data-src="/assets/images/gallery/your-photo.webp"
+            - Set data-category to one or more of: tractors, exhibitions, showroom, team
+            - Set data-caption to a descriptive caption
+            - Replace the placeholder div with: <img src="/assets/images/gallery/your-photo.webp" alt="..." loading="lazy" />
+        -->
+        <div class="gallery-grid" id="gallery-grid" aria-label="Photos">
+
+          <!-- Tractors category items -->
+          <div class="gallery-item" data-category="tractors" data-src="/assets/images/gallery/tractor-1.webp" data-caption="TAFE 8502 4WD — Vue de profil" role="button" tabindex="0" aria-label="Voir en plein écran: TAFE 8502 4WD">
+            <div class="gallery-placeholder" style="aspect-ratio:4/3;">
+              <img src="/assets/images/gallery/tractor-1.webp" alt="Tracteur TAFE 8502 4WD" loading="lazy" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'" />
+              <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--color-grey);">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" style="width:40px;height:40px;opacity:0.4;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" /></svg>
+                <span style="font-size:0.75rem;text-align:center;">TAFE 8502 4WD</span>
+              </div>
+            </div>
+            <div class="gallery-item-overlay" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" /></svg>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="tractors" data-src="/assets/images/gallery/tractor-2.webp" data-caption="TAFE 7502 4WD — En action" role="button" tabindex="0" aria-label="Voir en plein écran: TAFE 7502 4WD en action">
+            <div class="gallery-placeholder" style="aspect-ratio:3/4;">
+              <img src="/assets/images/gallery/tractor-2.webp" alt="TAFE 7502 4WD en action" loading="lazy" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'" />
+              <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--color-grey);">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" style="width:40px;height:40px;opacity:0.4;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" /></svg>
+                <span style="font-size:0.75rem;text-align:center;">TAFE 7502 4WD</span>
+              </div>
+            </div>
+            <div class="gallery-item-overlay" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" /></svg>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="showroom" data-src="/assets/images/gallery/showroom-1.webp" data-caption="Showroom FieldsMotors — Sidi Bennour" role="button" tabindex="0" aria-label="Voir en plein écran: Showroom">
+            <div class="gallery-placeholder" style="aspect-ratio:16/9;">
+              <img src="/assets/images/gallery/showroom-1.webp" alt="Showroom FieldsMotors Sidi Bennour" loading="lazy" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'" />
+              <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--color-grey);">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" style="width:40px;height:40px;opacity:0.4;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .415.336.75.75.75z" /></svg>
+                <span style="font-size:0.75rem;text-align:center;">Showroom — Sidi Bennour</span>
+              </div>
+            </div>
+            <div class="gallery-item-overlay" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" /></svg>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="exhibitions" data-src="/assets/images/gallery/expo-1.webp" data-caption="Salon agricole — Stand FieldsMotors" role="button" tabindex="0" aria-label="Voir en plein écran: Salon agricole">
+            <div class="gallery-placeholder" style="aspect-ratio:4/3;">
+              <img src="/assets/images/gallery/expo-1.webp" alt="Salon agricole — Stand FieldsMotors" loading="lazy" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'" />
+              <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--color-grey);">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" style="width:40px;height:40px;opacity:0.4;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5" /></svg>
+                <span style="font-size:0.75rem;text-align:center;">Salon agricole</span>
+              </div>
+            </div>
+            <div class="gallery-item-overlay" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" /></svg>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="team" data-src="/assets/images/gallery/team-1.webp" data-caption="L'équipe FieldsMotors" role="button" tabindex="0" aria-label="Voir en plein écran: Équipe FieldsMotors">
+            <div class="gallery-placeholder" style="aspect-ratio:1/1;">
+              <img src="/assets/images/gallery/team-1.webp" alt="Équipe FieldsMotors Agricole" loading="lazy" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'" />
+              <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--color-grey);">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" style="width:40px;height:40px;opacity:0.4;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" /></svg>
+                <span style="font-size:0.75rem;text-align:center;">Notre équipe</span>
+              </div>
+            </div>
+            <div class="gallery-item-overlay" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" /></svg>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="tractors" data-src="/assets/images/gallery/tractor-3.webp" data-caption="TAFE 6028 — Travaux des champs" role="button" tabindex="0" aria-label="Voir en plein écran: TAFE 6028 travaux des champs">
+            <div class="gallery-placeholder" style="aspect-ratio:4/3;">
+              <img src="/assets/images/gallery/tractor-3.webp" alt="TAFE 6028 travaux des champs" loading="lazy" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'" />
+              <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--color-grey);">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" style="width:40px;height:40px;opacity:0.4;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" /></svg>
+                <span style="font-size:0.75rem;text-align:center;">TAFE 6028 — En action</span>
+              </div>
+            </div>
+            <div class="gallery-item-overlay" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" /></svg>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="showroom" data-src="/assets/images/gallery/showroom-2.webp" data-caption="Showroom — Espace tracteurs" role="button" tabindex="0" aria-label="Voir en plein écran: Espace tracteurs showroom">
+            <div class="gallery-placeholder" style="aspect-ratio:3/4;">
+              <img src="/assets/images/gallery/showroom-2.webp" alt="Showroom espace tracteurs" loading="lazy" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'" />
+              <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--color-grey);">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" style="width:40px;height:40px;opacity:0.4;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35" /></svg>
+                <span style="font-size:0.75rem;text-align:center;">Showroom intérieur</span>
+              </div>
+            </div>
+            <div class="gallery-item-overlay" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" /></svg>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="exhibitions" data-src="/assets/images/gallery/expo-2.webp" data-caption="Exposition — Démonstration terrain" role="button" tabindex="0" aria-label="Voir en plein écran: Démonstration terrain">
+            <div class="gallery-placeholder" style="aspect-ratio:16/9;">
+              <img src="/assets/images/gallery/expo-2.webp" alt="Exposition démonstration terrain" loading="lazy" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'" />
+              <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--color-grey);">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" style="width:40px;height:40px;opacity:0.4;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25" /></svg>
+                <span style="font-size:0.75rem;text-align:center;">Démonstration terrain</span>
+              </div>
+            </div>
+            <div class="gallery-item-overlay" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" /></svg>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Upload note for client -->
+        <div class="reveal" style="margin-top:48px;background:var(--color-orange-tint);border:2px dashed var(--color-orange);border-radius:var(--radius-md);padding:32px;text-align:center;">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:40px;height:40px;color:var(--color-orange);margin:0 auto 12px;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" /></svg>
+          <h3 style="color:var(--color-orange);margin-bottom:8px;">Photos à ajouter</h3>
+          <p style="color:var(--color-text-secondary);font-size:0.9rem;">Placez vos photos dans <code style="background:rgba(0,0,0,0.06);padding:2px 6px;border-radius:4px;">/assets/images/gallery/</code> au format WebP.<br/>Les placeholders ci-dessus seront remplacés automatiquement.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Visualisation photo">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Fermer">✕</button>
+      <img class="lightbox-img" src="" alt="" />
+      <p class="lightbox-caption"></p>
+    </div>
+    <button class="lightbox-prev" aria-label="Photo précédente">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width:24px;height:24px;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" /></svg>
+    </button>
+    <button class="lightbox-next" aria-label="Photo suivante">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width:24px;height:24px;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
+    </button>
+  </div>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo"><img src="/assets/images/logo.png" alt="FieldsMotors Logo" width="40" height="40" onerror="this.style.display='none'" /><div class="logo-text"><span class="logo-name">Fields<span>Motors</span></span><span class="logo-tagline">Agricole</span></div></a>
+          <p class="footer-tagline" data-i18n="footer.tagline">Votre partenaire de confiance en machinisme agricole au Maroc</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/share/1BM3pNTTG8/?mibextid=wwXIfr" class="social-link" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="https://www.instagram.com/fieldsmotor_agricole?igsh=MWEyeWpteXQ4NmF6cQ==" class="social-link" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+            <a href="https://www.tiktok.com/@fieldsmotors.agricole?_r=1&_t=ZS-95PN9SLzEc1" class="social-link" aria-label="TikTok"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col"><h4 data-i18n="footer.links_title">Liens Rapides</h4><nav class="footer-links"><a href="/" data-i18n="nav.home">Accueil</a><a href="/about.html" data-i18n="nav.about">À Propos</a><a href="/products.html" data-i18n="nav.products">Produits</a><a href="/services.html" data-i18n="nav.services">Services</a><a href="/gallery.html" data-i18n="nav.gallery">Galerie</a><a href="/contact.html" data-i18n="nav.contact">Contact</a></nav></div>
+        <div class="footer-col"><h4 data-i18n="footer.contact_title">Contact</h4><div class="footer-contact-items"><div class="footer-contact-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" /></svg><a href="tel:+212677184906">+212 677 184 906</a></div><div class="footer-contact-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg><a href="mailto:fieldsmotor.agri@gmail.com">fieldsmotor.agri@gmail.com</a></div></div></div>
+        <div class="footer-col"><h4>Horaires</h4><div class="footer-contact-items"><div class="footer-contact-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg><span data-i18n="contact.hours">Lun – Sam: 8h00 – 18h00</span></div></div></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="footer-year"></span> FieldsMotors Agricole. Tous droits réservés.</span>
+        <span>Sidi Bennour, Doukkala-Abda, Maroc</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/212677184906" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="/assets/js/i18n.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

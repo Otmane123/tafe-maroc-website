@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Page introuvable (404) | FieldsMotors Agricole</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon-96x96.png" />
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#F37020" />
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      background: var(--color-black);
+      color: #fff;
+    }
+    .error-code {
+      font-size: clamp(6rem, 20vw, 12rem);
+      font-weight: 900;
+      line-height: 1;
+      color: var(--color-orange);
+      margin: 0;
+    }
+    .error-title {
+      font-size: clamp(1.25rem, 4vw, 2rem);
+      font-weight: 700;
+      margin: 1rem 0 0.5rem;
+    }
+    .error-desc {
+      font-size: 1rem;
+      color: var(--color-grey);
+      max-width: 440px;
+      margin: 0 auto 2.5rem;
+    }
+    .error-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .error-tractor {
+      margin: 2rem auto 0;
+      opacity: 0.15;
+    }
+  </style>
+</head>
+<body>
+  <div class="error-page">
+    <p class="error-code">404</p>
+    <h1 class="error-title">Page introuvable</h1>
+    <p class="error-desc">
+      La page que vous cherchez n'existe pas ou a été déplacée.<br/>
+      Revenez à l'accueil ou explorez nos tracteurs TAFE.
+    </p>
+    <div class="error-actions">
+      <a href="index.html" class="btn btn-primary">Accueil</a>
+      <a href="products.html" class="btn btn-outline" style="color:#fff; border-color:#fff;">Voir les tracteurs</a>
+      <a href="contact.html" class="btn btn-outline" style="color:#fff; border-color:#fff;">Nous contacter</a>
+    </div>
+    <!-- Tractor SVG illustration -->
+    <svg class="error-tractor" width="240" height="120" viewBox="0 0 240 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <ellipse cx="60" cy="95" rx="28" ry="28" stroke="white" stroke-width="4"/>
+      <ellipse cx="60" cy="95" rx="12" ry="12" stroke="white" stroke-width="3"/>
+      <ellipse cx="175" cy="100" rx="18" ry="18" stroke="white" stroke-width="4"/>
+      <ellipse cx="175" cy="100" rx="8" ry="8" stroke="white" stroke-width="3"/>
+      <path d="M88 68H155L165 85H88V68Z" stroke="white" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M88 68L70 50H120L130 68" stroke="white" stroke-width="3" stroke-linejoin="round"/>
+      <rect x="120" y="38" width="40" height="30" rx="4" stroke="white" stroke-width="3"/>
+      <path d="M155 82V95" stroke="white" stroke-width="3"/>
+      <path d="M88 82V95H32" stroke="white" stroke-width="3"/>
+    </svg>
+  </div>
+
+  <script src="assets/js/i18n.js"></script>
+  <script>
+    I18n.init().then(() => {
+      const lang = I18n.getLang();
+      const titles = { fr: 'Page introuvable (404)', ar: 'الصفحة غير موجودة (404)', en: 'Page Not Found (404)' };
+      const headings = { fr: 'Page introuvable', ar: 'الصفحة غير موجودة', en: 'Page Not Found' };
+      const descs = {
+        fr: 'La page que vous cherchez n\'existe pas ou a été déplacée.<br/>Revenez à l\'accueil ou explorez nos tracteurs TAFE.',
+        ar: 'الصفحة التي تبحث عنها غير موجودة أو تم نقلها.<br/>عد إلى الصفحة الرئيسية أو تصفح جراراتنا.',
+        en: 'The page you\'re looking for doesn\'t exist or has been moved.<br/>Go back home or explore our TAFE tractors.'
+      };
+      document.title = titles[lang] || titles.fr;
+      document.querySelector('.error-title').textContent = headings[lang] || headings.fr;
+      document.querySelector('.error-desc').innerHTML = descs[lang] || descs.fr;
+      document.documentElement.lang = lang;
+    });
+  </script>
+</body>
+</html>
