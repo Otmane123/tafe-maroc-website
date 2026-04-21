@@ -1944,6 +1944,100 @@ p { line-height: 1.7; }
 
 .footer-bottom a:hover { color: var(--color-white); }
 
+/* ── Official Distributor Strip (footer) ── */
+.footer-distributor {
+  border-top: 1px solid rgba(255,255,255,0.12);
+  padding: 28px 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.footer-dist-logos {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-dist-logo-fm {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.footer-dist-logo-fm img {
+  height: 38px;
+  width: 38px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+
+.footer-dist-logo-fm .logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-dist-logo-fm .logo-name {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--color-white);
+  letter-spacing: -0.01em;
+}
+
+.footer-dist-logo-fm .logo-name span {
+  color: var(--color-orange);
+}
+
+.footer-dist-logo-fm .logo-tagline {
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+}
+
+.footer-dist-sep {
+  font-size: 1.4rem;
+  font-weight: 200;
+  color: rgba(255,255,255,0.3);
+  line-height: 1;
+}
+
+.footer-dist-logo-tafe {
+  height: 32px;
+  width: auto;
+  border-radius: 4px;
+  opacity: 0.92;
+}
+
+.footer-dist-text {
+  margin: 0;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.55);
+  font-style: italic;
+  letter-spacing: 0.01em;
+}
+
+.footer-dist-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(243,112,32,0.15);
+  border: 1px solid rgba(243,112,32,0.35);
+  border-radius: 99px;
+  padding: 4px 12px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color-orange);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
 /* ── Scroll Reveal Animations ── */
 .reveal {
   opacity: 0;
