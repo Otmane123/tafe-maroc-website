@@ -62,7 +62,7 @@ const Products = (() => {
     const subsidyLabel = lang === 'ar' ? 'دعم FDA' : lang === 'en' ? 'FDA Subsidy' : 'Subvention FDA';
 
     // Category display — uppercase, short label
-    const catMap = { polyvalent: 'POLYVALENT', orchard: 'VERGER', heritage: 'HERITAGE', puissant: 'PUISSANT', premium: 'PREMIUM' };
+    const catMap = { compact: 'COMPACT', classic: 'CLASSIC', magna: 'MAGNA', polyvalent: 'POLYVALENT', orchard: 'VERGER', heritage: 'HERITAGE', puissant: 'PUISSANT', premium: 'PREMIUM' };
     const catLabel = catMap[(product.category || '').toLowerCase()] || (product.category || '').toUpperCase() || 'TAFE';
 
     const inCompare = compareList.includes(product.id);
@@ -80,7 +80,7 @@ const Products = (() => {
       <article class="product-card-v2 reveal" data-product-id="${product.id}" data-hp="${product.hp}" data-drive="${product.drive}">
         <div class="pc-top">
           <span class="pc-hp-badge">${product.hp} ${hpLabel}</span>
-          <span class="pc-cat-badge">${catLabel}</span>
+          <span class="pc-cat-badge" data-cat="${(product.category||'').toLowerCase()}">${catLabel}</span>
         </div>
         <div class="pc-image">
           ${zelligeStar}
@@ -435,15 +435,24 @@ async function initCatalogPage() {
     });
   });
 
-  // Category dropdown
+  // Category tab buttons
+  const catBtns = document.querySelectorAll('.filter-cat-btn');
+  catBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      catBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentCategory = btn.getAttribute('data-filter-cat');
+      render();
+    });
+  });
+
+  // Legacy category dropdown (kept for backwards compat, hidden if tabs present)
   const catSelect = document.getElementById('category-select');
-  if (catSelect) {
-    // Populate options dynamically from product data
+  if (catSelect && !catBtns.length) {
     const categories = [...new Set(Products.all.map(p => p.category).filter(Boolean))];
     const allLabel = catSelect.dataset.allLabel || 'Toutes les catégories';
     catSelect.innerHTML = `<option value="all">${allLabel}</option>` +
       categories.map(c => `<option value="${c}">${c.charAt(0).toUpperCase() + c.slice(1)}</option>`).join('');
-
     catSelect.addEventListener('change', () => {
       currentCategory = catSelect.value;
       render();
@@ -506,6 +515,10 @@ async function initCatalogPage() {
       document.querySelectorAll('.filter-drive-btn').forEach(b => b.classList.remove('active'));
       const allDriveBtn = document.querySelector('.filter-drive-btn[data-filter-drive="all"]');
       if (allDriveBtn) allDriveBtn.classList.add('active');
+
+      catBtns.forEach(b => b.classList.remove('active'));
+      const allCatBtn = document.querySelector('.filter-cat-btn[data-filter-cat="all"]');
+      if (allCatBtn) allCatBtn.classList.add('active');
 
       if (catSelect) catSelect.value = 'all';
 

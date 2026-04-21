@@ -18,6 +18,50 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/css/main.css" />
   <style>
+    /* ── Category tab buttons ── */
+    .filter-cat-group {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .filter-cat-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      border: 2px solid var(--color-border, #e0e0e0);
+      border-radius: var(--radius-full, 999px);
+      background: var(--color-white, #fff);
+      color: var(--color-text, #111);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: var(--font-heading, 'Poppins', sans-serif);
+      white-space: nowrap;
+    }
+    .filter-cat-btn:hover { border-color: var(--color-orange, #F37020); color: var(--color-orange, #F37020); }
+    .filter-cat-btn.active {
+      background: var(--color-black, #111);
+      border-color: var(--color-black, #111);
+      color: var(--color-white, #fff);
+    }
+    .filter-cat-btn.active.filter-cat-compact { background: #2e7d32; border-color: #2e7d32; }
+    .filter-cat-btn.active.filter-cat-classic { background: var(--color-orange, #F37020); border-color: var(--color-orange, #F37020); }
+    .filter-cat-btn.active.filter-cat-magna   { background: #b71c1c; border-color: #b71c1c; }
+    .cat-btn-sub {
+      font-size: 0.72rem;
+      font-weight: 400;
+      opacity: 0.75;
+      margin-left: 2px;
+    }
+    .cat-btn-icon { font-size: 0.9rem; }
+
+    /* ── category badge colour variants on cards ── */
+    .pc-cat-badge[data-cat="compact"] { background: #e8f5e9; color: #2e7d32; }
+    .pc-cat-badge[data-cat="classic"] { background: #fff3e0; color: #e65100; }
+    .pc-cat-badge[data-cat="magna"]   { background: #ffebee; color: #b71c1c; }
+
     .product-detail-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -152,15 +196,27 @@
               <span class="hp-value-display" id="hp-value-display" data-unit="CV">≤ 100 CV</span>
             </div>
 
-            <!-- Category dropdown -->
-            <select
-              id="category-select"
-              class="category-select"
-              aria-label="Filtrer par catégorie"
-              data-all-label="Toutes les catégories"
-            >
-              <option value="all">Toutes les catégories</option>
-            </select>
+            <!-- Category tabs -->
+            <div class="filter-cat-group" role="group" aria-label="Filtre gamme">
+              <button class="filter-cat-btn active" data-filter-cat="all">
+                <span class="cat-btn-label">Toutes</span>
+              </button>
+              <button class="filter-cat-btn filter-cat-compact" data-filter-cat="compact">
+                <span class="cat-btn-icon">🌱</span>
+                <span class="cat-btn-label">Compact</span>
+                <span class="cat-btn-sub">47 CV</span>
+              </button>
+              <button class="filter-cat-btn filter-cat-classic" data-filter-cat="classic">
+                <span class="cat-btn-icon">⚙️</span>
+                <span class="cat-btn-label">Classic</span>
+                <span class="cat-btn-sub">60–75 CV</span>
+              </button>
+              <button class="filter-cat-btn filter-cat-magna" data-filter-cat="magna">
+                <span class="cat-btn-icon">🔥</span>
+                <span class="cat-btn-label">Magna</span>
+                <span class="cat-btn-sub">80–100 CV</span>
+              </button>
+            </div>
 
           </div>
         </div>
