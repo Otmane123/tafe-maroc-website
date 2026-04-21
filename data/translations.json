@@ -93,7 +93,14 @@
       "compare_title": "Comparer les Modèles",
       "compare_select": "Sélectionner des modèles à comparer (max 3)",
       "no_products": "Aucun produit ne correspond à vos critères",
-      "back_catalog": "Retour au Catalogue"
+      "back_catalog": "Retour au Catalogue",
+      "equip_cat_label": "Catégorie de matériel",
+      "equip_tracteur": "Tracteur Agricole",
+      "equip_semence": "Matériel de Semence",
+      "equip_fenaison": "Matériel de Fenaison",
+      "equip_traitement": "Matériel de Traitement",
+      "equip_labour": "Matériel de Labour",
+      "equip_soon": "Bientôt"
     },
     "services": {
       "title": "Services & Après-Vente",
@@ -175,7 +182,9 @@
       "contact_title": "Contact",
       "follow_title": "Suivez-Nous",
       "rights": "Tous droits réservés",
-      "company": "FieldsMotors Agricole SARL"
+      "company": "FieldsMotors Agricole SARL",
+      "dist_text": "FieldsMotors Agricole est le distributeur officiel de tracteurs TAFE au Maroc",
+      "dist_badge": "Distributeur Officiel"
     },
     "common": {
       "loading": "Chargement...",
@@ -285,7 +294,14 @@
       "compare_title": "مقارنة الموديلات",
       "compare_select": "اختر موديلات للمقارنة (حتى 3)",
       "no_products": "لا توجد منتجات تطابق معاييرك",
-      "back_catalog": "العودة للكتالوج"
+      "back_catalog": "العودة للكتالوج",
+      "equip_cat_label": "فئة المعدات",
+      "equip_tracteur": "جرار فلاحي",
+      "equip_semence": "معدات البذر",
+      "equip_fenaison": "معدات الحصاد",
+      "equip_traitement": "معدات المعالجة",
+      "equip_labour": "معدات الحرث",
+      "equip_soon": "قريباً"
     },
     "services": {
       "title": "الخدمات وما بعد البيع",
@@ -367,7 +383,9 @@
       "contact_title": "التواصل",
       "follow_title": "تابعنا",
       "rights": "جميع الحقوق محفوظة",
-      "company": "FieldsMotors Agricole SARL"
+      "company": "FieldsMotors Agricole SARL",
+      "dist_text": "FieldsMotors Agricole هو الموزع الرسمي لجرارات TAFE في المغرب",
+      "dist_badge": "موزع رسمي"
     },
     "common": {
       "loading": "جاري التحميل...",
@@ -477,7 +495,14 @@
       "compare_title": "Compare Models",
       "compare_select": "Select models to compare (max 3)",
       "no_products": "No products match your criteria",
-      "back_catalog": "Back to Catalog"
+      "back_catalog": "Back to Catalog",
+      "equip_cat_label": "Equipment Category",
+      "equip_tracteur": "Agricultural Tractor",
+      "equip_semence": "Seeding Equipment",
+      "equip_fenaison": "Hay Equipment",
+      "equip_traitement": "Treatment Equipment",
+      "equip_labour": "Tillage Equipment",
+      "equip_soon": "Coming Soon"
     },
     "services": {
       "title": "Services & After-Sales",
@@ -559,7 +584,9 @@
       "contact_title": "Contact",
       "follow_title": "Follow Us",
       "rights": "All rights reserved",
-      "company": "FieldsMotors Agricole SARL"
+      "company": "FieldsMotors Agricole SARL",
+      "dist_text": "FieldsMotors Agricole is the official distributor of TAFE tractors in Morocco",
+      "dist_badge": "Official Distributor"
     },
     "common": {
       "loading": "Loading...",

@@ -151,6 +151,8 @@ const Products = (() => {
     const quoteLabel  = lang === 'ar' ? 'طلب عرض سعر'     : lang === 'en' ? 'Request Quote'  : 'Devis';
     const compareLabel= lang === 'ar' ? 'مقارنة'            : lang === 'en' ? 'Compare'         : 'Comparer';
     const subsidyLabel= lang === 'ar' ? 'دعم FDA'           : lang === 'en' ? 'FDA Subsidy'     : 'Subvention FDA';
+    const label2wd = (typeof I18n !== 'undefined' && I18n.t) ? I18n.t('common.2wd') : (lang === 'ar' ? 'دفع ثنائي' : lang === 'en' ? '2WD' : '2RM');
+    const label4wd = (typeof I18n !== 'undefined' && I18n.t) ? I18n.t('common.4wd') : (lang === 'ar' ? 'دفع رباعي' : lang === 'en' ? '4WD' : '4RM');
 
     const catMap  = { compact:'COMPACT', classic:'CLASSIC', magna:'MAGNA' };
     const catLabel= catMap[(active.category||'').toLowerCase()] || (active.category||'').toUpperCase() || 'TAFE';
@@ -199,12 +201,12 @@ const Products = (() => {
             <button class="variant-btn ${variants[0].drive==='2WD' && activeIdx===0 ? 'active' : (variants[0].drive==='4WD' && activeIdx===1 ? 'active' : '')}"
               data-drive="${variants[0].drive}"
               onclick="switchFamilyVariant(this)">
-              ${variants[0].drive==='2WD' ? '2RM' : '4RM'}
+              ${variants[0].drive==='2WD' ? label2wd : label4wd}
             </button>
             <button class="variant-btn ${variants[1].drive==='4WD' && activeIdx===1 ? 'active' : (variants[1].drive==='2WD' && activeIdx===0 ? 'active' : '')}"
               data-drive="${variants[1].drive}"
               onclick="switchFamilyVariant(this)">
-              ${variants[1].drive==='4WD' ? '4RM' : '2RM'}
+              ${variants[1].drive==='4WD' ? label4wd : label2wd}
             </button>
           </div>
           ${subsidyHtml}
