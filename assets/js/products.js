@@ -114,6 +114,114 @@ const Products = (() => {
     `;
   }
 
+  // ── Family / variant grouping ─────────────────────────────────────────────
+
+  // Strip drive suffix from product ID to get family key
+  function getFamilyKey(id) {
+    return id.replace(/-[24]wd$/, '');
+  }
+
+  // Group an array of products into families.
+  // Returns array of arrays: each inner array = 1 product (solo) or 2 products (variants).
+  function groupByFamily(products) {
+    const map = new Map();
+    products.forEach(p => {
+      const key = getFamilyKey(p.id);
+      if (!map.has(key)) map.set(key, []);
+      map.get(key).push(p);
+    });
+    // Sort variants: 2WD first, 4WD second
+    map.forEach(arr => arr.sort((a, b) => (a.drive === '2WD' ? -1 : 1)));
+    return [...map.values()];
+  }
+
+  // Render a family card — either a solo card or a 2RM/4RM grouped card
+  function renderFamilyCard(variants, lang = 'fr', activeDrive = 'all') {
+    if (variants.length === 1) return renderCard(variants[0], lang);
+
+    // Determine which variant to show by default
+    let activeIdx = 0; // default: first (2WD)
+    if (activeDrive === '4WD') activeIdx = 1;
+
+    const active   = variants[activeIdx];
+    const inactive = variants[1 - activeIdx];
+
+    const hpLabel   = lang === 'ar' ? 'حصان' : lang === 'en' ? 'HP' : 'CV';
+    const detailLabel = lang === 'ar' ? 'مشاهدة التفاصيل' : lang === 'en' ? 'View Details' : 'Voir Détails';
+    const quoteLabel  = lang === 'ar' ? 'طلب عرض سعر'     : lang === 'en' ? 'Request Quote'  : 'Devis';
+    const compareLabel= lang === 'ar' ? 'مقارنة'            : lang === 'en' ? 'Compare'         : 'Comparer';
+    const subsidyLabel= lang === 'ar' ? 'دعم FDA'           : lang === 'en' ? 'FDA Subsidy'     : 'Subvention FDA';
+
+    const catMap  = { compact:'COMPACT', classic:'CLASSIC', magna:'MAGNA' };
+    const catLabel= catMap[(active.category||'').toLowerCase()] || (active.category||'').toUpperCase() || 'TAFE';
+
+    // Base model name: strip trailing drive tokens
+    const baseModel = active.model.replace(/\s+(2WD|4WD|PD\s*4WD|PD)$/i, '').replace(/\s+(4RM|2RM)$/i, '').trim();
+
+    const familyKey = getFamilyKey(active.id);
+
+    const zelligeStar = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true" style="position:absolute;width:120px;height:120px;top:50%;left:50%;transform:translate(-50%,-50%);opacity:0.10;pointer-events:none;z-index:0;"><polygon points="50,4 56,18 72,10 64,26 80,32 66,40 80,48 64,54 72,70 56,62 50,96 44,62 28,70 36,54 20,48 34,40 20,32 36,26 28,10 44,18" fill="none" stroke="%23C9952A" stroke-width="1.5"/><polygon points="50,22 70,50 50,78 30,50" fill="none" stroke="%23006233" stroke-width="1"/><circle cx="50" cy="50" r="3" fill="%23C9952A"/></svg>`;
+
+    const subsidyHtml = active.subsidy_eligible ? `
+      <div class="pc-subsidy">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        ${subsidyLabel} — 30%
+      </div>` : '';
+
+    return `
+      <article class="product-card-v2 reveal product-family-card"
+        data-family="${familyKey}"
+        data-active-variant="${active.id}"
+        data-2wd-id="${variants.find(v=>v.drive==='2WD')?.id||''}"
+        data-4wd-id="${variants.find(v=>v.drive==='4WD')?.id||''}"
+        data-hp="${active.hp}"
+        data-drive="${active.drive}"
+        data-product-id="${active.id}">
+        <div class="pc-top">
+          <span class="pc-hp-badge">${active.hp} ${hpLabel}</span>
+          <span class="pc-cat-badge" data-cat="${(active.category||'').toLowerCase()}">${catLabel}</span>
+        </div>
+        <div class="pc-image">
+          ${zelligeStar}
+          <img
+            class="family-card-img"
+            src="${active.image}"
+            data-img-2wd="${variants.find(v=>v.drive==='2WD')?.image||active.image}"
+            data-img-4wd="${variants.find(v=>v.drive==='4WD')?.image||active.image}"
+            alt="${active.brand} ${baseModel}"
+            loading="lazy"
+            onerror="this.src='';this.alt='${active.brand} ${baseModel}';"
+          />
+        </div>
+        <div class="pc-info">
+          <h3 class="pc-model">${active.brand} ${baseModel}</h3>
+          <div class="variant-toggle" role="group" aria-label="Choisir la transmission">
+            <button class="variant-btn ${variants[0].drive==='2WD' && activeIdx===0 ? 'active' : (variants[0].drive==='4WD' && activeIdx===1 ? 'active' : '')}"
+              data-drive="${variants[0].drive}"
+              onclick="switchFamilyVariant(this)">
+              ${variants[0].drive==='2WD' ? '2RM' : '4RM'}
+            </button>
+            <button class="variant-btn ${variants[1].drive==='4WD' && activeIdx===1 ? 'active' : (variants[1].drive==='2WD' && activeIdx===0 ? 'active' : '')}"
+              data-drive="${variants[1].drive}"
+              onclick="switchFamilyVariant(this)">
+              ${variants[1].drive==='4WD' ? '4RM' : '2RM'}
+            </button>
+          </div>
+          ${subsidyHtml}
+          <div class="pc-actions">
+            <a href="/product-detail.html?id=${active.id}" class="btn btn-primary btn-sm family-detail-link">${detailLabel}</a>
+            <a href="/contact.html?subject=quote&model=${active.id}" class="btn btn-outline btn-sm family-quote-link">${quoteLabel}</a>
+          </div>
+          <button
+            class="btn btn-sm pc-compare-btn btn-outline compare-toggle"
+            data-compare-id="${active.id}"
+            onclick="Products.toggleCompare('${active.id}')"
+          >${compareLabel}</button>
+        </div>
+      </article>
+    `;
+  }
+
   function subsidyBadge(lang) {
     const title = lang === 'ar' ? 'برنامج دعم FDA' : lang === 'en' ? 'FDA Subsidy Program' : 'Programme de Subvention FDA';
     const text = lang === 'ar' ? 'حتى 30% من السعر مدعوم' : lang === 'en' ? 'up to 30% covered' : 'jusqu\'à 30% pris en charge';
@@ -371,6 +479,8 @@ const Products = (() => {
     getFeatured,
     getById,
     renderCard,
+    renderFamilyCard,
+    groupByFamily,
     renderDetail,
     renderCompareTable,
     toggleCompare,
@@ -493,7 +603,9 @@ async function initCatalogPage() {
     }
 
     if (noResults) noResults.style.display = 'none';
-    grid.innerHTML = results.map(p => Products.renderCard(p, lang)).join('');
+    // Group variants (45 DI 2WD + 4WD → one card with 2RM/4RM toggle)
+    const groups = Products.groupByFamily(results);
+    grid.innerHTML = groups.map(g => Products.renderFamilyCard(g, lang, currentDrive)).join('');
 
     // Re-init scroll reveal for new cards
     grid.querySelectorAll('.reveal').forEach(el => {
@@ -530,6 +642,42 @@ async function initCatalogPage() {
   document.addEventListener('langchange', render);
 
   render();
+}
+
+/* ── Switch 2RM / 4RM variant on a grouped family card ── */
+function switchFamilyVariant(btn) {
+  const card = btn.closest('.product-family-card');
+  if (!card) return;
+
+  const selectedDrive = btn.dataset.drive; // '2WD' or '4WD'
+  const targetId = selectedDrive === '2WD' ? card.dataset['2wdId'] : card.dataset['4wdId'];
+  if (!targetId) return;
+
+  const product = Products.getById(targetId);
+  if (!product) return;
+
+  // Update image
+  const img = card.querySelector('.family-card-img');
+  if (img) img.src = product.image;
+
+  // Update detail/quote links
+  const detailLink = card.querySelector('.family-detail-link');
+  if (detailLink) detailLink.href = `/product-detail.html?id=${product.id}`;
+  const quoteLink = card.querySelector('.family-quote-link');
+  if (quoteLink) quoteLink.href = `/contact.html?subject=quote&model=${product.id}`;
+
+  // Update compare button
+  const cmpBtn = card.querySelector('.compare-toggle');
+  if (cmpBtn) cmpBtn.dataset.compareId = product.id;
+
+  // Update card data attribute
+  card.dataset.activeVariant = product.id;
+  card.dataset.drive = product.drive;
+
+  // Toggle active state of variant buttons
+  card.querySelectorAll('.variant-btn').forEach(b => {
+    b.classList.toggle('active', b === btn);
+  });
 }
 
 /* ── Featured Products (Home) ── */
