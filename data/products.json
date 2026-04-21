@@ -34,7 +34,7 @@
       "Valve de blocage transport"
     ],
     "subsidy_eligible": true,
-    "image": "/assets/images/products/tafe-45di-2wd.webp",
+    "image": "/assets/images/products/tafe-45di-2wd.jpg",
     "featured": true,
     "translations": {
       "fr": {
@@ -79,7 +79,7 @@
       "Blocage de différentiel"
     ],
     "subsidy_eligible": true,
-    "image": "/assets/images/products/tafe-45di-4wd.webp",
+    "image": "/assets/images/products/tafe-45di-4wd.jpg",
     "featured": true,
     "translations": {
       "fr": {
@@ -125,7 +125,7 @@
       "Soupape simple distributeur"
     ],
     "subsidy_eligible": true,
-    "image": "/assets/images/products/tafe-6300di-2wd.webp",
+    "image": "/assets/images/products/tafe-6300di-2wd.jpg",
     "featured": false,
     "translations": {
       "fr": {
@@ -171,7 +171,7 @@
       "Soupape simple distributeur"
     ],
     "subsidy_eligible": true,
-    "image": "/assets/images/products/tafe-6300di-2wd.webp",
+    "image": "/assets/images/products/tafe-6300di-4wd.jpg",
     "featured": false,
     "translations": {
       "fr": {
@@ -216,7 +216,7 @@
       "Lest avant"
     ],
     "subsidy_eligible": true,
-    "image": "/assets/images/products/tafe-6530di-4wd.webp",
+    "image": "/assets/images/products/tafe-6530di-4wd.jpg",
     "featured": false,
     "translations": {
       "fr": {
@@ -266,7 +266,7 @@
       "Lest de roues arrière"
     ],
     "subsidy_eligible": true,
-    "image": "/assets/images/products/tafe-7502-4wd.webp",
+    "image": "/assets/images/products/tafe-7502-4wd.jpg",
     "featured": true,
     "translations": {
       "fr": {
@@ -317,7 +317,7 @@
       "Lest de roues arrière"
     ],
     "subsidy_eligible": true,
-    "image": "/assets/images/products/tafe-8502-4wd.webp",
+    "image": "/assets/images/products/tafe-8502-4wd.jpg",
     "featured": true,
     "translations": {
       "fr": {
@@ -367,7 +367,7 @@
       "Canopy"
     ],
     "subsidy_eligible": true,
-    "image": "/assets/images/products/tafe-9502-4wd.webp",
+    "image": "/assets/images/products/tafe-9502-4wd.jpg",
     "featured": true,
     "translations": {
       "fr": {
@@ -417,7 +417,7 @@
       "Canopy"
     ],
     "subsidy_eligible": true,
-    "image": "/assets/images/products/tafe-1002-4wd.webp",
+    "image": "/assets/images/products/tafe-1002-4wd.jpg",
     "featured": false,
     "translations": {
       "fr": {
